@@ -1,14 +1,18 @@
 # atc-windows-edition-wiki
 
-📖 Windows Edition Wiki — Rust (std) Desktop-Client mit egui
+Wiki für [atc-windows-edition](https://github.com/A-TownChain-Okosystems/atc-windows-edition)
 
-## Zugehöriges Repository
-- **Source:** [`A-TownChain-Okosystems/atc-windows-edition`](https://github.com/A-TownChain-Okosystems/atc-windows-edition)
+Dokumentation für Windows Edition
 
-## Status
-- **Wiki-Status:** Initialisiert
-- **Sync:** Täglich synchronisiert via GitHub + Notion + Wiki Sync Automation
-- **Organisation:** A-TownChain-Okosystems
+## Dokumentation
+- [Architektur](ARCHITECTURE.md)
+- [API Reference](API.md)
+- [Module](MODULES.md)
+- [Status](STATUS.md)
 
----
-Copyright © Michael Wroblewski / A-TownChain-Okosystems. All Rights Reserved.
+## Übersicht
+Dieses Wiki dokumentiert das `atc-windows-edition`-Repo, Teil des A-TownChain OS Ökosystems (70 Repos).
+
+Org: [A-TownChain-Okosystems](https://github.com/A-TownChain-Okosystems)
+
+[agent: aurora-base44-superagent-6a2756186106d6f0fbb105b5]
