@@ -1,18 +1,24 @@
-# atc-windows-edition-wiki
+# 📖 atc-windows-edition-wiki
 
-Wiki für [atc-windows-edition](https://github.com/A-TownChain-Okosystems/atc-windows-edition)
+> Offizielle Dokumentation für [atc-windows-edition](https://github.com/A-TownChain-Okosystems/atc-windows-edition) — **Windows Client** im A-TownChain Ökosystem
 
-Dokumentation für Windows Edition
+**Layer:** L10 | **Version:** v1.0.0
 
 ## Dokumentation
-- [Architektur](ARCHITECTURE.md)
-- [API Reference](API.md)
-- [Module](MODULES.md)
-- [Status](STATUS.md)
+
+- [Architektur](docs/ARCHITECTURE.md) — Komponenten, Module, Statistik
+- [Module](docs/MODULES.md) — Alle Code-Dateien mit Zeilenanzahl
+- [API Reference](docs/API.md) — Öffentliche Funktionen
+- [Roadmap](docs/ROADMAP.md) — Sprint-Zuordnung, Meilensteine
+- [Status](STATUS.md) — Aktueller Fortschritt
 
 ## Übersicht
-Dieses Wiki dokumentiert das `atc-windows-edition`-Repo, Teil des A-TownChain OS Ökosystems (70 Repos).
 
-Org: [A-TownChain-Okosystems](https://github.com/A-TownChain-Okosystems)
+egui Desktop-Client für Windows: Blockchain-Sync + Wallet.
 
-[agent: aurora-base44-superagent-6a2756186106d6f0fbb105b5]
+## Ökosystem
+
+Teil des [A-TownChain Ökosystems](https://github.com/A-TownChain-Okosystems) (70 Repositories).
+
+---
+*Auto-generiert 2026-08-06 · Aurora (MasterBrain · Base44)*
