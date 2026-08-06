@@ -1,37 +1,36 @@
-# 🌳 Architektur — atc-windows-edition-wiki
+# ARCHITECTURE.md — atc-windows-edition
+> Copyright © Michael Wroblewski / A-TownChain-Okosystems. All Rights Reserved.
 
-> **Stand:** 2026-08-06 | **Commit:** 0851c4e
-> **Teil von:** [A-TownChain Ökosystem](https://github.com/A-TownChain-Okosystems)
-
-## Statistik
-
-| Metrik | Wert |
-|--------|------|
-| Dateien | 12 |
-| Zeilen | 203 |
-| .atc | 0 |
-| .py | 0 |
-| .rs | 0 |
-| .ts/.tsx | 0 |
-| .md | 10 |
-
-## Verzeichnisstruktur
-
-```
-├── docs/ (4 files, 98 lines)
-│   ├── API.md (18 lines)
-│   ├── ARCHITECTURE.md (41 lines)
-│   ├── MODULES.md (16 lines)
-│   └── ROADMAP.md (23 lines)
+## File Tree
+```tree
 ├── .gitignore
-├── ARCHITECTURE.md (14 lines)
-├── FILE_REGISTER.md (14 lines)
+├── CHANGELOG.md
+├── COMPONENT_PLAN.md
+├── Cargo.toml
+├── FILE_REGISTER.md
 ├── LICENSE
-├── MODULES.md (10 lines)
-├── README.md (24 lines)
-├── ROADMAP.md (8 lines)
-└── STATUS.md (35 lines)
+├── README.md
+├── ROADMAP.md
+├── STATUS.md
+└── src/
+    ├── app.rs
+    ├── explorer.rs
+    ├── gui/
+    ├── main.rs
+    ├── node.rs
+    ├── settings.rs
+    └── wallet.rs
 ```
 
----
-*Auto-generiert 2026-08-06 · Aurora (MasterBrain · Base44)*
+## Module Descriptions
+- **src/main.rs**: Native Windows executable entry point initializing process runtime and GUI event loops.
+- **src/gui/**: Desktop graphical user interface built with `egui` and `eframe`.
+- **src/app.rs** & **src/node.rs**: Core desktop app context, async task management, and local node supervisor.
+- **src/wallet.rs** & **src/explorer.rs**: Integrated Windows desktop wallet view and embedded block explorer tab.
+- **Cargo.toml**: Rust package manifest specifying crate metadata and MSVC target dependencies.
+
+## Build System
+Cargo build system targetting `x86_64-pc-windows-msvc`. MSVC toolchain required for native C/C++ linking on Windows.
+
+## Dependencies
+Rust std (1.75+), `egui` (0.24+), `eframe`, `tokio` (async runtime), `serde` / `serde_json`, `windows-sys` / `winapi` bindings.
